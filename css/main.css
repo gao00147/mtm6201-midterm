@@ -66,18 +66,24 @@ header {
 }
 
 .hero-overlay {
-  background: rgba(0,0,0,0.55);
-  padding: 6rem 1rem;
+  min-height: 90vh;   /* Relative to Viewport */
+  background: rgba(0, 0, 0, 0.55);  /* Dark Overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
 }
 
 .hero-content {
-  text-align: center;
   color: white;
+  max-width: 800px;
 }
 
 .hero h2 {
   font-size: 2.027rem;
   margin-bottom: 1rem;
+  color: white;
 }
 
 /* BUTTON */
@@ -174,4 +180,5 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 
