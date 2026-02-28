@@ -8,12 +8,35 @@
   --font-body: 'Karla', sans-serif;
 }
 
-/* GLOBAL */
+/* Global */
 body {
   font-family: var(--font-body);
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+/* Focus styles */
+a:focus,
+button:focus {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 2px;
 }
 
 h1, h2, h3 {
@@ -34,7 +57,7 @@ header {
   padding: 1.5rem 1rem;
 }
 
-/* HERO */
+/* Hero */
 .hero {
   background-image: url("../images/hero-background.jpg");
   background-size: cover;
@@ -111,7 +134,7 @@ img {
   border-radius: 50%;
 }
 
-/* FOOTER */
+/* Footer */
 footer {
   background: var(--primary-color);
   color: white;
@@ -120,7 +143,7 @@ footer {
   margin-top: 3rem;
 }
 
-/* TABLET */
+/* Tablet */
 @media (min-width: 768px) {
 
   .hero h2 {
@@ -136,7 +159,7 @@ footer {
   }
 }
 
-/* DESKTOP */
+/* Desktop */
 @media (min-width: 1100px) {
 
   .hero h2 {
@@ -151,3 +174,4 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
