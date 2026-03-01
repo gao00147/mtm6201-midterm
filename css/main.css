@@ -171,6 +171,7 @@ section {
   background-size: cover;
   background-position: center;
   color: var(--white);
+  position: relative;
 }
 
 .banner-menu {
@@ -184,6 +185,13 @@ section {
 .banner-overlay {
   background: rgba(0,0,0,0.55);
   padding: 7rem 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 /* Story Layout */
@@ -256,6 +264,7 @@ section {
   h3 { font-size: 1.953rem; }
   p { font-size: 1rem; }
 }
+
 
 
 
