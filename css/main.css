@@ -173,6 +173,7 @@ section {
   background-position: center;
   color: var(--white);
   position: relative;
+  min-height: 400px;
 }
 
 .banner-menu {
@@ -185,7 +186,6 @@ section {
 
 .banner-overlay {
   background: rgba(0,0,0,0.55);
-  padding: 7rem 0;
   width: 100%;
   position: absolute;
   top: 0;
@@ -265,6 +265,12 @@ section {
   h3 { font-size: 1.953rem; }
   p { font-size: 1rem; }
 }
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+}
+
 
 
 
