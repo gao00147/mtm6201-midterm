@@ -186,29 +186,22 @@ section {
 }
 
 /* Banners */
-.banner {
+.banner-wrapper {
+  background-image: url("../images/coffee-shop.jpeg");
   background-size: cover;
   background-position: center;
-  color: var(--white);
   position: relative;
-  min-height: 400px;
-  text-align: center;
-}
-
-.banner-menu,
-.banner-location {
-  background-image: url("../images/coffee-shop.jpeg");
 }
 
 .banner-overlay {
   background: rgba(0,0,0,0.55);
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  display: flex;
-  align-items: center;
+}
+
+.banner {
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 0;
 }
 
 /* Story Layout */
@@ -293,9 +286,10 @@ section {
   .banner-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: url("../images/coffee-shop.jpeg");
-    background-size: cover;
-    background-position: center;
+  }
+
+  .banner-overlay {
+    display: flex;
   }
 
   header {
@@ -338,6 +332,7 @@ footer {
   text-align: center;
   padding: 2rem 0;
 }
+
 
 
 
