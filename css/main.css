@@ -195,6 +195,11 @@ section {
   text-align: center;
 }
 
+.banner-menu,
+.banner-location {
+  background-image: url("../images/coffee-shop.jpeg");
+}
+
 .banner-overlay {
   background: rgba(0,0,0,0.55);
   width: 100%;
@@ -333,6 +338,7 @@ footer {
   text-align: center;
   padding: 2rem 0;
 }
+
 
 
 
