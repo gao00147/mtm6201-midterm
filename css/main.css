@@ -1,3 +1,4 @@
+/* Use CSS variables here to store colors */
 :root {
   --white: #ffffff;
   --black: #000000;
@@ -6,7 +7,7 @@
   --bg: #f3f0e9;
 }
 
-/* Base styles */
+/* Base styles-Sets the default font and background color for the whole page so every section inherits these base styles */
 body {
   font-family: "Karla", sans-serif;
   background: var(--bg);
@@ -19,14 +20,14 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
+/* Centers the content and limits the width to 1200px as required, with padding so content doesn't touch the edges */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-/* Skip link */
-
+/* Skip link-Hidden off screen by default */
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -134,6 +135,14 @@ section {
   text-align: center;
 }
 
+/* About-Photo grid-4 small images-2x2 */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 /* Why */
 .why-grid {
   display: grid;
@@ -232,5 +241,6 @@ section {
   h3 { font-size: 1.953rem; }
   p { font-size: 1rem; }
 }
+
 
 
