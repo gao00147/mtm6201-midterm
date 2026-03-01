@@ -195,11 +195,6 @@ section {
   text-align: center;
 }
 
-.banner-menu,
-.banner-location {
-  background-image: url("../images/coffee-shop.jpeg");
-}
-
 .banner-overlay {
   background: rgba(0,0,0,0.55);
   width: 100%;
@@ -280,20 +275,21 @@ section {
     align-items: center;
   }
 
+  .testimonials {
+  text-align: left;
+  }
+  
   .testimonial-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .testimonial img {
-  width: 120px;
-  border-radius: 50%;
-  margin: 0 auto 1rem;
- }
-
   .banner-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
- }
+  background-image: url("../images/coffee-shop.jpeg");
+  background-size: cover;
+  background-position: center;
+}
 
   header {
     background: var(--black);
@@ -335,6 +331,7 @@ footer {
   text-align: center;
   padding: 2rem 0;
 }
+
 
 
 
