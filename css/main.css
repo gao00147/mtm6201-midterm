@@ -254,6 +254,17 @@ section {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .testimonial img {
+  width: 120px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+}
+
+  .banner-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
   header {
     background: var(--bg);
     text-align: left;
@@ -286,6 +297,7 @@ footer {
   text-align: center;
   padding: 2rem 0;
 }
+
 
 
 
