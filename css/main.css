@@ -96,9 +96,9 @@ header {
 }
 
 .btn-outline {
-  background: transparent;
+  background: var(--white);
   border: 2px solid var(--white);
-  color: var(--white);
+  color: var(--black);
 }
 
 /* Hero */
@@ -183,6 +183,7 @@ section {
   color: var(--white);
   position: relative;
   min-height: 400px;
+  text-align: center;
 }
 
 .banner-menu {
@@ -242,7 +243,11 @@ section {
 /* Tablet */
 @media (min-width: 768px) {
   .why-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-item:last-child {
+    grid-column: 1 / -1;
   }
 
   .story-grid {
@@ -266,7 +271,7 @@ section {
 }
 
   header {
-    background: var(--bg);
+    background: var(--black);
     text-align: left;
   }
 
@@ -277,11 +282,11 @@ section {
   }
 
   .logo {
-    color: var(--black);
+    color: var(--white);
   }
 
   .nav-list a {
-    color: var(--black);
+    color: var(--white);
   }
 }
 
@@ -291,12 +296,21 @@ section {
   h2 { font-size: 3.052rem; }
   h3 { font-size: 1.953rem; }
   p { font-size: 1rem; }
+
+  .why-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .why-item:last-child {
+    grid-column: auto;
+  }
 }
 
 footer {
   text-align: center;
   padding: 2rem 0;
 }
+
 
 
 
