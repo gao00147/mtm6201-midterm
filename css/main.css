@@ -96,9 +96,9 @@ header {
 }
 
 .btn-outline {
-  background: var(--white);
+  background: transparent;
   border: 2px solid var(--white);
-  color: var(--black);
+  color: var(--white);
 }
 
 /* Hero */
@@ -187,10 +187,6 @@ section {
 }
 
 .banner-menu {
-  background-image: url("../images/three-cups.jpeg");
-}
-
-.banner-location {
   background-image: url("../images/coffee-shop.jpeg");
 }
 
@@ -224,20 +220,39 @@ section {
   margin-top: 2rem;
 }
 
-.testimonial img {
+.testimonial-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-img-wrapper img {
   width: 100%;
-  border-radius: 0;
-  margin: 0 0 1rem 0;
+  display: block;
+}
+
+.testimonial-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  text-align: left;
+}
+
+.testimonial-overlay p {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-overlay strong {
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: 0.85rem;
 }
 
 .testimonial {
   text-align: center;
-}
-
-.testimonial strong {
-  color: var(--gold);
-  display: block;
-  margin-top: 0.5rem;
 }
 
 /* Tablet */
@@ -263,17 +278,17 @@ section {
   width: 120px;
   border-radius: 50%;
   margin: 0 auto 1rem;
-}
+ }
 
   .banner-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
+ }
 
   header {
     background: var(--black);
     text-align: left;
-  }
+ }
 
   .header-wrapper {
     display: flex;
@@ -310,6 +325,7 @@ footer {
   text-align: center;
   padding: 2rem 0;
 }
+
 
 
 
