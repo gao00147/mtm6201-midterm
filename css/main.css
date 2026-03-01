@@ -268,15 +268,17 @@ section {
 
   .why-item:last-child {
     grid-column: 1 / -1;
+    max-width: 400px;
+    margin: 0 auto;
   }
-
+  
   .story-grid {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
 
   .testimonials {
-  text-align: left;
+    text-align: left;
   }
   
   .testimonial-grid {
@@ -284,17 +286,17 @@ section {
   }
 
   .banner-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-image: url("../images/coffee-shop.jpeg");
-  background-size: cover;
-  background-position: center;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../images/coffee-shop.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
 
   header {
     background: var(--black);
     text-align: left;
- }
+  }
 
   .header-wrapper {
     display: flex;
@@ -331,6 +333,7 @@ footer {
   text-align: center;
   padding: 2rem 0;
 }
+
 
 
 
