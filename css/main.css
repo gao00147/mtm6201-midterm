@@ -150,6 +150,10 @@ section {
   margin-top: 2rem;
 }
 
+.why-item {
+  text-align: center;
+}
+
 .why-item img {
   width: 80px;
   margin-bottom: 1rem;
@@ -241,6 +245,7 @@ section {
   h3 { font-size: 1.953rem; }
   p { font-size: 1rem; }
 }
+
 
 
 
