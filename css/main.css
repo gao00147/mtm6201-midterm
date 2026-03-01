@@ -135,6 +135,11 @@ section {
   text-align: center;
 }
 
+/* Eyebrow text above headings is styled in yellow */
+.eyebrow {
+  color: var(--gold);
+}
+
 /* About-Photo grid-4 small images-2x2 */
 .about-grid {
   display: grid;
@@ -249,6 +254,7 @@ section {
   h3 { font-size: 1.953rem; }
   p { font-size: 1rem; }
 }
+
 
 
 
