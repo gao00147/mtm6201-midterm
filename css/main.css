@@ -163,7 +163,8 @@ section {
 
 .why-item img {
   width: 80px;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
+  display: block;
 }
 
 /* Banners */
