@@ -101,6 +101,15 @@ header {
   color: var(--white);
 }
 
+.btn-white {
+  background: var(--white);
+  color: var(--black);
+}
+
+.btn-white:hover {
+  background: var(--bg);
+}
+
 /* Hero */
 .hero {
   background: url("../images/hero-background.jpg") center/cover no-repeat;
@@ -186,7 +195,8 @@ section {
   text-align: center;
 }
 
-.banner-menu {
+.banner-menu,
+.banner-location {
   background-image: url("../images/coffee-shop.jpeg");
 }
 
@@ -325,6 +335,7 @@ footer {
   text-align: center;
   padding: 2rem 0;
 }
+
 
 
 
