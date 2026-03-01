@@ -89,6 +89,11 @@ header {
   background: var(--brown);
 }
 
+.btn:focus {
+  outline: 3px solid var(--brown);
+  outline-offset: 2px;
+}
+
 .btn-outline {
   background: transparent;
   border: 2px solid var(--white);
@@ -109,6 +114,18 @@ header {
 .hero-content {
   text-align: center;
   color: var(--white);
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Sections */
@@ -215,4 +232,5 @@ section {
   h3 { font-size: 1.953rem; }
   p { font-size: 1rem; }
 }
+
 
