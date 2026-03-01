@@ -103,6 +103,7 @@ header {
 /* Hero */
 .hero {
   background: url("../images/hero-background.jpg") center/cover no-repeat;
+  position: relative;
 }
 
 .hero-overlay {
@@ -110,6 +111,7 @@ header {
   background: rgba(0,0,0,0.55);
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .hero-content {
@@ -254,6 +256,7 @@ section {
   h3 { font-size: 1.953rem; }
   p { font-size: 1rem; }
 }
+
 
 
 
