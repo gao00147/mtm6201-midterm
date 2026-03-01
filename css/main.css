@@ -98,6 +98,7 @@ header {
 .btn-outline {
   background: transparent;
   border: 2px solid var(--white);
+  color: var(--white);
 }
 
 /* Hero */
@@ -139,7 +140,6 @@ header {
 /* Sections */
 section {
   padding: 6rem 0;
-  text-align: center;
 }
 
 /* Eyebrow text above headings is styled in yellow */
@@ -156,6 +156,10 @@ section {
 }
 
 /* Why */
+.why {
+  text-align: center;
+}
+
 .why-grid {
   display: grid;
   gap: 2rem;
@@ -210,6 +214,7 @@ section {
 .testimonials {
   background: #111;
   color: var(--white);
+  text-align: center;
 }
 
 .testimonial-grid {
@@ -219,13 +224,19 @@ section {
 }
 
 .testimonial img {
-  width: 120px;
-  border-radius: 50%;
-  margin: 0 auto 1rem;
+  width: 100%;
+  border-radius: 0;
+  margin: 0 0 1rem 0;
 }
 
 .testimonial {
   text-align: center;
+}
+
+.testimonial strong {
+  color: var(--gold);
+  display: block;
+  margin-top: 0.5rem;
 }
 
 /* Tablet */
@@ -275,6 +286,7 @@ footer {
   text-align: center;
   padding: 2rem 0;
 }
+
 
 
 
