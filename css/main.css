@@ -195,11 +195,8 @@ section {
 
 .banner-overlay {
   background: rgba(0,0,0,0.55);
-  width: 100%;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 6rem 0;
+  text-align: center;
 }
 
 .banner {
@@ -336,6 +333,7 @@ footer {
   text-align: center;
   padding: 2rem 0;
 }
+
 
 
 
