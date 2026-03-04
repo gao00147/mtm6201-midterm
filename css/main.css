@@ -123,15 +123,15 @@ header {
 }
 
 .btn-hero {
-  background-color: var(--gold); 
-  color: var(--white);           
+  background-color: var(--gold) !important; 
+  color: var(--white) !important;          
   border: 2px solid var(--gold);
 }
 
 .btn-hero:hover, .btn-hero:focus {
-  background-color: var(--brown); 
-  border-color: var(--brown);
-  color: var(--white);
+  background-color: var(--brown) !important;
+  border-color: var(--brown) !important;
+  color: var(--white) !important;
 }
 
 /* Hero */
@@ -364,6 +364,7 @@ footer {
   text-align: center;
   padding: 2rem 0;
 }
+
 
 
 
