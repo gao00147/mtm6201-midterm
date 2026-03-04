@@ -1,4 +1,4 @@
-/* Use CSS variables here to store colors */
+/* Use CSS variables here to store colors. Global variables are defined here for easier modification later. */
 :root {
   --white: #ffffff;
   --black: #000000;
@@ -7,7 +7,7 @@
   --bg: #f3f0e9;
 }
 
-/* Base styles-Sets the default font and background color for the whole page so every section inherits these base styles */
+/* Base styles-Following the Mobile-First principle: the layout is optimized for mobile first, then adapted for larger screens. */
 body {
   font-family: "Karla", sans-serif;
   background: var(--bg);
@@ -18,9 +18,21 @@ body {
 h1, h2, h3 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
-/* Centers the content and limits the width to 1200px as required, with padding so content doesn't touch the edges */
+/* Mobile-Font Size-Referred to the Recommended Typescales table. Using rem units helps maintain proper proportions when the system font size is scaled. */
+h1 { font-size: 2.027rem; } /* 32.44px */
+h2 { font-size: 1.802rem; } /* 28.83px */
+h3 { font-size: 1.424rem; } /* 22.78px */
+
+p {
+  font-size: 1rem; /* 16px */
+  margin-bottom: 1rem;
+}
+
+/* Centers the content and limits the width to 1200px as required, with padding so content does not touch the edges. */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -74,7 +86,7 @@ header {
   text-decoration: underline;
 }
 
-/* Buttons */
+/* Buttons-Transitions were added to all interactive elements so that the background color changes smoothly when hovering with the mouse or navigating with the Tab key. */
 .btn {
   display: inline-block;
   font-family: "Karla", sans-serif;
@@ -135,6 +147,7 @@ header {
   animation: fadeIn 1.5s ease forwards;
 }
 
+/* Animation-Animation effects were added to the page so the content in the Hero section has a fade-in and slight movement effect. */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -262,8 +275,14 @@ section {
   text-align: center;
 }
 
-/* Tablet */
+/* Tablet-Breakpoint for tablet size. The font size and the number of grid columns were adjusted. */
 @media (min-width: 768px) {
+
+  /* Tablet-Font Size */
+  h1 { font-size: 2.986rem; } /* 47.78px */
+  h2 { font-size: 2.488rem; } /* 39.81px */
+  h3 { font-size: 1.728rem; } /* 27.65px */
+  
   .why-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -312,12 +331,13 @@ section {
   }
 }
 
-/* Desktop */
+/* Desktop-Desktop breakpoint. By increasing the container padding and font sizes, the page content doesn’t appear too empty on large displays. */
 @media (min-width: 1100px) {
-  h1 { font-size: 3.815rem; }
-  h2 { font-size: 3.052rem; }
-  h3 { font-size: 1.953rem; }
-  p { font-size: 1rem; }
+
+  /* Desktop-Font Size */
+  h1 { font-size: 3.815rem; } /* 61.04px */
+  h2 { font-size: 3.052rem; } /* 48.83px */
+  h3 { font-size: 1.953rem; } /* 31.25px */
 
   .why-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -332,6 +352,7 @@ footer {
   text-align: center;
   padding: 2rem 0;
 }
+
 
 
 
