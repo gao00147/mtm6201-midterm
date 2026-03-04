@@ -122,6 +122,18 @@ header {
   background: var(--bg);
 }
 
+.btn-hero {
+  background-color: var(--gold); 
+  color: var(--white);           
+  border: 2px solid var(--gold);
+}
+
+.btn-hero:hover, .btn-hero:focus {
+  background-color: var(--brown); 
+  border-color: var(--brown);
+  color: var(--white);
+}
+
 /* Hero */
 .hero {
   background: url("../images/hero-background.jpg") center/cover no-repeat;
@@ -352,6 +364,7 @@ footer {
   text-align: center;
   padding: 2rem 0;
 }
+
 
 
 
